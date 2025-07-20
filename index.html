@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levi Setiadi | Project Lainnya </title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Space Mono', monospace;
+            background-color: #fef08a;
+            background-image: radial-gradient(black 1px, transparent 0);
+            background-size: 20px 20px;
+        }
+
+        /* Animasi Masuk */
+        @keyframes slideInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-slide-in-up { animation: slideInUp 0.6s ease-out forwards; }
+        
+        /* Animasi Keluar */
+        @keyframes fadeOutAndAway {
+            from { opacity: 1; transform: scale(1); }
+            to { opacity: 0; transform: scale(0.95); }
+        }
+        .animate-out {
+            animation: fadeOutAndAway 0.4s ease-in forwards;
+        }
+
+        @keyframes marquee {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .animate-marquee { animation: marquee 20s linear infinite; }
+    </style>
+</head>
+
+<body>
+
+    <div class="container min-h-screen flex items-center justify-center p-4">
+
+        <div id="main-card"
+            class="w-full max-w-sm mx-auto bg-white border-2 border-black p-6 sm:p-8 shadow-[8px_8px_0px_#000000] animate-slide-in-up">
+
+            <div class="w-full border-2 border-black mb-6 overflow-hidden">
+                <p class="font-bold whitespace-nowrap py-2 animate-marquee">
+                    LEVI SETIADI • HOBI SCROLL FESNUK • LEVI SETIADI • HOBI SCROLL FESNUK • &nbsp;
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center text-center">
+                <img src="https://via.placeholder.com/150" alt="Levi Setiadi" class="w-24 h-24 rounded-full border-2 border-black object-cover">
+                <h1 class="text-2xl font-bold mt-4">Levi Setiadi</h1>
+                <p class="text-md text-gray-600">@leavealive_</p>
+            </div>
+
+            <div class="mt-8">
+                
+                <div class="space-y-4">
+                    <p class="mb-3 font-bold text-sm uppercase text-gray-500">Paling Banyak Dikunjungi</p>
+                    
+                    <a href="javascript:void(0);" onclick="smoothRedirect('https://gagstok.netlify.app/')"
+                        class="block w-full bg-yellow-300 border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:bg-yellow-400 hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                        <div class="flex items-center gap-x-4"><i class="fa-solid fa-seedling fa-lg fa-fw"></i><span>Grow a Garden - Info Stok</span></div>
+                    </a>
+
+                    <a href="javascript:void(0);" onclick="smoothRedirect('https://alevia.netlify.app/')"
+                        class="block w-full bg-yellow-300 border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:bg-yellow-400 hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                        <div class="flex items-center gap-x-4"><i class="fa-solid fa-robot fa-lg fa-fw"></i><span>Alevia AI</span></div>
+                    </a>
+                    
+                    <a href="javascript:void(0);" onclick="smoothRedirect('https://adaquran.netlify.app/')"
+                        class="block w-full bg-yellow-300 border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:bg-yellow-400 hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                        <div class="flex items-center gap-x-4"><i class="fa-solid fa-book-quran fa-lg fa-fw"></i><span>AdaQur'an</span></div>
+                    </a>
+                </div>
+
+                <div class="mt-6">
+                    <p class="mb-3 font-bold text-sm uppercase text-gray-500">Project Lainnya</p>
+                    
+                    <div class="relative mb-4">
+                        <input type="text" id="search-box" placeholder="Cari project..." class="w-full bg-white border-2 border-black p-3 font-bold focus:outline-none placeholder-gray-500">
+                    </div>
+
+                    <div id="project-list" class="space-y-4">
+                        
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://alquran-website.vercel.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-book-quran fa-lg fa-fw"></i><span>Al-Qur'an Website</span></div>
+                        </a>
+
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://tabunginaja.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-piggy-bank fa-lg fa-fw"></i><span>Tabungin aja</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://xcodebro.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-code fa-lg fa-fw"></i><span>XCodeBro</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://smart-bookmark.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-bookmark fa-lg fa-fw"></i><span>Smart Bookmark Link</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://upsclaceimg.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-image fa-lg fa-fw"></i><span>Up Scale Image</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://uangku-levv.vercel.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-wallet fa-lg fa-fw"></i><span>Uangku</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://upecha.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-file-arrow-up fa-lg fa-fw"></i><span>UpEcha</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://ainven.netlify.app')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-warehouse fa-lg fa-fw"></i><span>AInventory</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://ngeluh.koyeb.app')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-comment-dots fa-lg fa-fw"></i><span>Ngeluh Dulu Baru Tenang</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://twentynote.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-note-sticky fa-lg fa-fw"></i><span>Twenty Note</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://bunnytask.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-list-check fa-lg fa-fw"></i><span>Bunny Task</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://aleviadl.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-circle-down fa-lg fa-fw"></i><span>Alevia Downloader</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://9mod.com/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-puzzle-piece fa-lg fa-fw"></i><span>9Mod</span></div>
+                        </a>
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://ayoanon.netlify.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-user-secret fa-lg fa-fw"></i><span>Ayo Anon</span></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex justify-center space-x-6 mt-8">
+                <a href="javascript:void(0);" onclick="smoothRedirect('https://instagram.com/leavealive_')"
+                    class="text-black hover:text-gray-600 transition-colors"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                <a href="javascript:void(0);" onclick="smoothRedirect('https://t.me/allnine_c')"
+                    class="text-black hover:text-gray-600 transition-colors"><i class="fa-brands fa-telegram fa-2x"></i></a>
+                <a href="mailto:levisetiadinine@gmail.com"
+                    class="text-black hover:text-gray-600 transition-colors"><i class="fa-solid fa-envelope fa-2x"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function smoothRedirect(url) {
+            const mainCard = document.getElementById('main-card');
+            mainCard.classList.add('animate-out');
+            setTimeout(() => {
+                window.location.href = url;
+            }, 400); 
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            
+            const searchBox = document.getElementById('search-box');
+            const projectList = document.getElementById('project-list');
+            const projects = document.querySelectorAll('#project-list a'); // Lebih spesifik
+
+            searchBox.addEventListener('keyup', function () {
+                const filter = searchBox.value.toUpperCase();
+                for (let i = 0; i < projects.length; i++) {
+                    let span = projects[i].getElementsByTagName('span')[0];
+                    if (span) {
+                        let textValue = span.textContent || span.innerText;
+                        if (textValue.toUpperCase().indexOf(filter) > -1) {
+                            projects[i].style.display = "block";
+                        } else {
+                            projects[i].style.display = "none";
+                        }
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+  </html>
