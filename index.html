@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Levi Setiadi | Project Lainnya </title>
+    <title>Levi Setiadi | Linktree</title>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -95,6 +95,10 @@
 
                     <div id="project-list" class="space-y-4">
                         
+                        <a href="javascript:void(0);" onclick="smoothRedirect('https://colorpall.vercel.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
+                            <div class="flex items-center gap-x-4"><i class="fa-solid fa-palette fa-lg fa-fw"></i><span>ColorPall</span></div>
+                        </a>
+                        
                         <a href="javascript:void(0);" onclick="smoothRedirect('https://alquran-website.vercel.app/')" class="block w-full bg-white border-2 border-black p-4 font-bold shadow-[4px_4px_0px_#000000] hover:shadow-none hover:translate-x-1 hover:translate-y-1 transition-all duration-150 ease-in-out">
                             <div class="flex items-center gap-x-4"><i class="fa-solid fa-book-quran fa-lg fa-fw"></i><span>Al-Qur'an Website</span></div>
                         </a>
@@ -167,7 +171,7 @@
             
             const searchBox = document.getElementById('search-box');
             const projectList = document.getElementById('project-list');
-            const projects = document.querySelectorAll('#project-list a'); // Lebih spesifik
+            const projects = document.querySelectorAll('#project-list a');
 
             searchBox.addEventListener('keyup', function () {
                 const filter = searchBox.value.toUpperCase();
@@ -186,4 +190,4 @@
         });
     </script>
 </body>
-  </html>
+</html>
